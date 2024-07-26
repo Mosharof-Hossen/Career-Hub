@@ -7,11 +7,13 @@ import Header from './Components/Header/Header'
 function App() {
 
   return (
-    <div className='container mx-auto'>
-      <Header></Header>
+    <div className='' >
+      <div className='max-w-5xl mx-auto'>
+        <Header></Header>
 
-      <Outlet></Outlet>
-      
+        <Outlet></Outlet>
+      </div>
+
       <Footer></Footer>
     </div>
   )
