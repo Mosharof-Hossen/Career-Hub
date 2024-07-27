@@ -7,7 +7,7 @@ import Header from './Components/Header/Header'
 function App() {
 
   return (
-    <div className='' >
+    <div className='space-y-12' >
       <div className='max-w-5xl mx-auto'>
         <Header></Header>
 
