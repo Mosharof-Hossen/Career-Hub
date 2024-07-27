@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Job from "../Job/Job";
 
 const FeaturedJobs = () => {
-
+    const [jobCount , setJobCount] = useState(4);
     const [jobs, setJobs] = useState([]);
     useEffect(() => {
         fetch("jobs.json")
@@ -18,8 +18,11 @@ const FeaturedJobs = () => {
             </div>
             <div className="grid grid-cols-2 gap-5 p-5">
                 {
-                    jobs.map((job,i)=><Job key={i} job={job}></Job>)
+                    jobs.slice(0,jobCount).map((job,i)=><Job key={i} job={job}></Job>)
                 }
+            </div>
+            <div className={jobCount === jobs.length ? "hidden":"text-center"}>
+                <button onClick={()=>setJobCount(jobs.length)} className=" rounded px-3 py-1 text-white bg-gradient-to-r from-primary-first to-primary-second">See All Jobs</button>
             </div>
         </div>
     );
