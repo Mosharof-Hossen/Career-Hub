@@ -1,13 +1,18 @@
 import { faEnvelope, faLocationDot, faPhone, faSackDollar, faSheetPlastic } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useLoaderData, useParams } from "react-router-dom";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { saveJobApplication } from "../../Utility/LocalStorage";
 
 const JobDetails = () => {
     const jobs = useLoaderData();
     const { jobId } = useParams()
-    const { job_description, job_title, job_responsibility, salary, educational_requirements, experiences, contact_information, } = jobs.find((job) => job.id == jobId);
-    console.log(jobs);
+    const { id, job_description, job_title, job_responsibility, salary, educational_requirements, experiences, contact_information, } = jobs.find((job) => job.id == jobId);
+    const notify = (id) => {
+        saveJobApplication(id);
+        toast("You hve applied successfully")
+    };
     return (
         <div className="p-5 ">
             <div className="text-center my-14">
@@ -31,7 +36,7 @@ const JobDetails = () => {
                 </div>
                 <div className="md:col-span-2 p-2 md:ml-5">
                     <div className="bg-[#f4f2ff] p-6 rounded">
-                        <div  className="space-y-4">
+                        <div className="space-y-4">
                             <h4 className="font-extrabold text-xl">Job Details</h4>
                             <hr className="my-3" />
                             <p className="text-xl"> <FontAwesomeIcon icon={faSackDollar} /> <span className=" font-bold">Salary:</span> <span className="text-primary-color">{salary} (Per Month)</span></p>
@@ -49,8 +54,8 @@ const JobDetails = () => {
                         </div>
                     </div>
 
-                    <button className="bg-gradient-to-r from-primary-first to-primary-second md:w-full py-2 rounded mt-5 text-white">Apply Now</button>
-
+                    <button onClick={()=>notify(id)} className="bg-gradient-to-r from-primary-first to-primary-second md:w-full px-1 py-2 rounded mt-5 text-white">Apply Now</button>
+                    <ToastContainer />
                 </div>
             </div>
         </div>
