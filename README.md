@@ -1,8 +1,22 @@
-# React + Vite
+# Project Name : [Career Hub](https://66a5478b94ed9864b2cd762f--regal-hotteok-c71f85.netlify.app/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features: 
+1. It is a website of finding Job.
+2. U can view details of Job.
+3. And then U can apply on that jon.
+4. In the applied Job section u can filter the Applied job based on Onside/Remote.
+5. Here I used Local storage.
 
-Currently, two official plugins are available:
+## Tools: 
+1.React Js
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2.Tailwind CSS
+
+3.Font Awesome icon
+
+4.Responsive
+
+5.DaisyUI
+
+6.Use Fake Data
+
