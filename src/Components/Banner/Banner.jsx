@@ -9,7 +9,7 @@ const Banner = () => {
                 <button className="bg-gradient-to-r from-primary-first to-primary-second px-4 py-1 text-white rounded">Get Started</button>
             </div>
             <div className="flex-1">
-                <img src="/src/assets/images/user.png" alt=""  />
+                <img src="https://i.ibb.co/jRpp6bH/user.png" alt=""  />
             </div>
         </div>
     );

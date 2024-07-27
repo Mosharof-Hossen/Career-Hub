@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 const Category = ({ category }) => {
     const {logo,category_name,availability} = category;
-    console.log(category);
     return (
         <div className="card bg-base-100 w-56 shadow-xl mt-5">
             <figure className="px-10 pt-10">
