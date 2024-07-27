@@ -1,7 +1,7 @@
 [
      {
       "id": 1,
-      "logo": "https://i.ibb.co/PzrbTxh/google-1-1-1.png",
+      "logo": "https://i.ibb.co/RjwmNzS/google.png",
       "job_title": "Technical Database Engineer",
       "company_name": "Google LLC",
       "remote_or_onsite": "Remote",
@@ -20,7 +20,7 @@
     },
     {
         "id": 2,
-        "logo": "https://i.ibb.co/PwH2BqB/Rectangle-3-1.png",
+        "logo": "https://i.ibb.co/d5NRYWK/netflix.png",
         "job_title": "Senior Product Designer",
         "company_name": "Netflix",
         "remote_or_onsite": "Onsite",
@@ -39,7 +39,7 @@
       },
       {
         "id": 3,
-        "logo": "https://i.ibb.co/zsh3m5M/Tesla-wordmark-logo-600x319.png",
+        "logo": "https://i.ibb.co/yqf7wTL/tesla.png",
         "job_title": "Software Engineer",
         "company_name": "Tesla",
         "remote_or_onsite": "Onsite",
@@ -58,9 +58,9 @@
       },
       {
         "id": 4,
-        "logo": "https://i.ibb.co/yXG4Y0L/netflix-logo-png-clip-art.png",
+        "logo": "https://i.ibb.co/fYZcDzJ/airbnb.png",
         "job_title": "Software Engineer",
-        "company_name": "Google LLC",
+        "company_name": "Airbnb",
         "remote_or_onsite": "Onsite",
         "location": "Dhaka, Bangladesh",
         "job_type": "Full Time",
@@ -77,7 +77,7 @@
       },
       {
         "id": 5,
-        "logo": "https://i.ibb.co/PzrbTxh/google-1-1-1.png",
+        "logo": "https://i.ibb.co/yqf7wTL/tesla.png",
         "job_title": "Technical Database Engineer",
         "company_name": "Tesla",
         "remote_or_onsite": "Remote",
@@ -96,7 +96,7 @@
       },
       {
         "id": 6,
-        "logo": "https://i.ibb.co/PwH2BqB/Rectangle-3-1.png",
+        "logo": "https://i.ibb.co/d5NRYWK/netflix.png",
         "job_title": "Senior Product Designer",
         "company_name": "Netflix",
         "remote_or_onsite": "Remote",
