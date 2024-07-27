@@ -5,11 +5,10 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const AppliedSingleJob = ({ job }) => {
-    const {id, logo, company_name, job_title, job_type, remote_or_onsite, location, salary } = job;
-    console.log(job);
+    const { id, logo, company_name, job_title, job_type, remote_or_onsite, location, salary } = job;
+
     return (
         <div className=''>
-
             <div className="card lg:card-side bg-base-100 shadow-xl p-5">
                 <figure className='md:w-52 w-full mx-auto bg-slate-100 p-5'>
                     <img
@@ -35,7 +34,7 @@ const AppliedSingleJob = ({ job }) => {
                         </div>
                     </div>
                     <div className="">
-                    <Link to={`/job-details/${id}`}> <button className="bg-gradient-to-r from-primary-first to-primary-second px-3 py-1 rounded text-white">View Details</button></Link>
+                        <Link to={`/job-details/${id}`}> <button className="bg-gradient-to-r from-primary-first to-primary-second px-3 py-1 rounded text-white">View Details</button></Link>
                     </div>
                 </div>
             </div>
