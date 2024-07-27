@@ -33,9 +33,10 @@ const AppliedJob = () => {
         }
     }
     return (
-        <div>
-            <div className="text-4xl font-extrabold text-center my-14">
+        <div className="">
+            <div className="text-4xl font-extrabold text-center bg-[#FAF8FF] py-14 bg-[url('/src/assets/images/bg1.png')] bg-no-repeat bg-left-bottom">
                 <h2>Applied Job</h2>
+                
             </div>
 
 
